@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Windows ###
 Thumbs.db
 ehthumbs.db
@@ -13,6 +14,29 @@ $RECYCLE.BIN/
 *~
 .directory
 
+=======
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+>>>>>>> 610543872b97807ff03fc43dcf9dcbe1827e2f75
 
 ### OSX ###
 .DS_Store
@@ -27,6 +51,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+<<<<<<< HEAD
 
 
 ### Maven ###
@@ -98,3 +123,5 @@ com_crashlytics_export_strings.xml
 
 ### GIT ###
 .gitconfig
+=======
+>>>>>>> 610543872b97807ff03fc43dcf9dcbe1827e2f75
