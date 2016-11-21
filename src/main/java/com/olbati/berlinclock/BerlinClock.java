@@ -3,7 +3,6 @@ package com.olbati.berlinclock;
 import com.google.common.base.Preconditions;
 
 import java.time.LocalTime;
-import java.util.Collections;
 
 /**
  * Created by marais on 18/11/2016.
@@ -15,7 +14,7 @@ public class BerlinClock {
     private BerlinClockMinute berlinClockMinute = new BerlinClockMinute();
 
     private BerlinClockSecond berlinClockSecond = new BerlinClockSecond();
-
+    
     public String[] convert(LocalTime time) {
         Preconditions.checkArgument(time != null, "time must not be null");
 

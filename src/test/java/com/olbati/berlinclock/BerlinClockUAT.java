@@ -33,4 +33,19 @@ public class BerlinClockUAT {
         assertThat(result[4]).isEqualTo("YYOO");
     }
 
+    @Test
+    public void should_return_berlin_clock_format_when_time_is_23_59_59() {
+        // Arrange  
+
+        // Act  
+        String[] result = berlinClock.convert(LocalTime.of(23, 59, 59));
+
+        // Assert 
+        assertThat(result[0]).isEqualTo("O");
+        assertThat(result[1]).isEqualTo("RRRR");
+        assertThat(result[2]).isEqualTo("RRRO");
+        assertThat(result[3]).isEqualTo("YYRYYRYYRYY");
+        assertThat(result[4]).isEqualTo("YYYY");
+    }
+
 }
