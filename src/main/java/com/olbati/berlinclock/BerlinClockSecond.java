@@ -5,11 +5,11 @@ package com.olbati.berlinclock;
  */
 public class BerlinClockSecond {
     public String convert(int second) {
-        if(second%2 == 0){
+
+        if (second % 2 == 0) {
             return "Y";
         }
 
         return "O";
-
     }
 }

@@ -47,5 +47,4 @@ public class BerlinClockUAT {
         assertThat(result[3]).isEqualTo("YYRYYRYYRYY");
         assertThat(result[4]).isEqualTo("YYYY");
     }
-
 }

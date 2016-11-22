@@ -14,11 +14,11 @@ public class BerlinClockMinuteTest {
     private BerlinClockMinute berlinClockMinute = new BerlinClockMinute();
 
     @Test
-    public void should_return_berlin_clock_format_when_minute_are_17(){
+    public void should_return_berlin_clock_format_when_minute_are_17() {
         // Arrange  
 
         // Act  
-        String[] result= berlinClockMinute.convert(17);
+        String[] result = berlinClockMinute.convert(17);
 
         // Assert 
         assertThat(result[0]).isEqualTo("YYROOOOOOOO");
@@ -27,42 +27,39 @@ public class BerlinClockMinuteTest {
     }
 
     @Test
-    public void should_return_berlin_clock_format_when_minute_are_20(){
+    public void should_return_berlin_clock_format_when_minute_are_20() {
         // Arrange  
 
         // Act  
-        String[] result= berlinClockMinute.convert(20);
+        String[] result = berlinClockMinute.convert(20);
 
         // Assert 
         assertThat(result[0]).isEqualTo("YYRYOOOOOOO");
         assertThat(result[1]).isEqualTo("OOOO");
-
     }
 
     @Test
-    public void should_return_berlin_clock_format_when_minute_are_59(){
+    public void should_return_berlin_clock_format_when_minute_are_59() {
         // Arrange  
 
         // Act  
-        String[] result= berlinClockMinute.convert(59);
+        String[] result = berlinClockMinute.convert(59);
 
         // Assert 
         assertThat(result[0]).isEqualTo("YYRYYRYYRYY");
         assertThat(result[1]).isEqualTo("YYYY");
-
     }
 
     @Test
-    public void should_return_berlin_clock_format_when_minute_are_00(){
+    public void should_return_berlin_clock_format_when_minute_are_00() {
         // Arrange  
 
         // Act  
-        String[] result= berlinClockMinute.convert(00);
+        String[] result = berlinClockMinute.convert(00);
 
         // Assert 
         assertThat(result[0]).isEqualTo("OOOOOOOOOOO");
         assertThat(result[1]).isEqualTo("OOOO");
-
     }
 
 

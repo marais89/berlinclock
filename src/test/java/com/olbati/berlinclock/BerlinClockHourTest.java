@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.runners.MockitoJUnitRunner;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -38,5 +39,4 @@ public class BerlinClockHourTest {
         assertThat(result[0]).isEqualTo("RROO");
         assertThat(result[1]).isEqualTo("RROO");
     }
-
 }

@@ -14,7 +14,7 @@ public class BerlinClock {
     private BerlinClockMinute berlinClockMinute = new BerlinClockMinute();
 
     private BerlinClockSecond berlinClockSecond = new BerlinClockSecond();
-    
+
     public String[] convert(LocalTime time) {
         Preconditions.checkArgument(time != null, "time must not be null");
 
